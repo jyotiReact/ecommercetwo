@@ -1,16 +1,16 @@
-'use client';
+"use client";
 
-import { Popover, Transition } from '@headlessui/react';
-import { Fragment, useState } from 'react';
-import { MdKeyboardArrowDown } from 'react-icons/md';
+import { Popover, Transition } from "@headlessui/react";
+import { Fragment, useState } from "react";
+import { MdKeyboardArrowDown } from "react-icons/md";
 
 const languages = [
-  { key: 1, value: 'Best Selling', label: 'Best Selling' },
-  { key: 2, value: 'Featured', label: 'Featured' },
-  { key: 3, value: 'Date', label: 'Date' },
-  { key: 3, value: 'Price', label: 'Price' },
-  { key: 3, value: 'Alphabetically A-Z', label: 'Alphabetically A-Z' },
-  { key: 3, value: 'Alphabetically Z-A', label: 'Alphabetically Z-A' },
+  { key: 1, value: "Best Selling", label: "Best Selling" },
+  { key: 2, value: "Featured", label: "Featured" },
+  { key: 3, value: "Date", label: "Date" },
+  { key: 3, value: "Price", label: "Price" },
+  { key: 3, value: "Alphabetically A-Z", label: "Alphabetically A-Z" },
+  { key: 3, value: "Alphabetically Z-A", label: "Alphabetically Z-A" },
 ];
 
 const Sorter = () => {

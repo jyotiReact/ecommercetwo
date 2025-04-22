@@ -1,16 +1,16 @@
-'use client';
+"use client";
 
-import { Dialog, Transition } from '@headlessui/react';
-import Image from 'next/image';
-import Link from 'next/link';
-import React, { Fragment, useState } from 'react';
-import { RiMenu2Line } from 'react-icons/ri';
+import { Dialog, Transition } from "@headlessui/react";
+import Image from "next/image";
+import Link from "next/link";
+import React, { Fragment, useState } from "react";
+import { RiMenu2Line } from "react-icons/ri";
 
-import { footerData } from '@/data/content';
-import banner_1 from '@/images/banner-1_3.webp';
-import banner_2 from '@/images/banner-1_4.webp';
-import ButtonPrimary from '@/shared/Button/ButtonPrimary';
-import ButtonSecondary2 from '@/shared/Button/ButtonSecondary2';
+import { footerData } from "@/data/content";
+import banner_1 from "@/images/banner-1_3.webp";
+import banner_2 from "@/images/banner-1_4.webp";
+import ButtonPrimary from "@/shared/Button/ButtonPrimary";
+import ButtonSecondary2 from "@/shared/Button/ButtonSecondary2";
 
 export interface CatalogBarProps {
   className?: string;
@@ -87,7 +87,7 @@ const CatalogBar: React.FC<CatalogBarProps> = ({ className }) => {
                               </h4>
                               <div className="mt-8">
                                 <p className="mb-3">
-                                  from:{' '}
+                                  from:{" "}
                                   <span className="text-lg font-semibold text-primary dark:text-white">
                                     $15
                                   </span>
@@ -114,7 +114,7 @@ const CatalogBar: React.FC<CatalogBarProps> = ({ className }) => {
                               </h4>
                               <div className="mt-8">
                                 <p className="mb-3">
-                                  from:{' '}
+                                  from:{" "}
                                   <span className="text-lg font-semibold text-primary dark:text-white">
                                     $15
                                   </span>

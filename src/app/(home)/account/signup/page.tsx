@@ -1,15 +1,15 @@
-import Image from 'next/image';
-import React from 'react';
+import Image from "next/image";
+import React from "react";
 
-import SignupForm from '@/components/account/SignupForm';
-import Breadcrumbs from '@/components/Breadcrumbs';
-import signup from '@/images/signup.jpg';
-import ButtonLink from '@/shared/Button/ButtonLink';
+import SignupForm from "@/components/account/SignupForm";
+import Breadcrumbs from "@/components/Breadcrumbs";
+import signup from "@/images/signup.jpg";
+import ButtonLink from "@/shared/Button/ButtonLink";
 
 const PageSignUp = () => {
   const breadcrumbItems = [
     { title: <ButtonLink href="/">Home</ButtonLink> },
-    { title: 'Account' },
+    { title: "Account" },
   ];
   return (
     <main>

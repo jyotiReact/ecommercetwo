@@ -1,7 +1,7 @@
-import React from 'react';
+import React from "react";
 
-import CategoryCard from '@/components/CategoryCard';
-import { categoriesData } from '@/data/content';
+import CategoryCard from "@/components/CategoryCard";
+import { categoriesData } from "@/data/content";
 
 const PopluarCategoriesSection = () => {
   return (

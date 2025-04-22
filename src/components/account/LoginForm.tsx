@@ -1,14 +1,14 @@
-'use client';
+"use client";
 
-import Link from 'next/link';
-import { useRouter } from 'next/navigation';
-import type { FormEvent } from 'react';
-import React from 'react';
+import Link from "next/link";
+import { useRouter } from "next/navigation";
+import type { FormEvent } from "react";
+import React from "react";
 
-import ButtonPrimary from '@/shared/Button/ButtonPrimary';
-import ButtonSecondary from '@/shared/Button/ButtonSecondary';
-import FormItem from '@/shared/FormItem';
-import Input from '@/shared/Input/Input';
+import ButtonPrimary from "@/shared/Button/ButtonPrimary";
+import ButtonSecondary from "@/shared/Button/ButtonSecondary";
+import FormItem from "@/shared/FormItem";
+import Input from "@/shared/Input/Input";
 
 const LoginForm = () => {
   const router = useRouter();
@@ -66,7 +66,7 @@ const LoginForm = () => {
               </ButtonPrimary>
               <ButtonSecondary
                 showPointer
-                onClick={() => router.push('/account/signup')}
+                onClick={() => router.push("/account/signup")}
                 className="w-full lg:w-1/2"
               >
                 Create Account

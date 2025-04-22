@@ -1,9 +1,9 @@
-import type { FC } from 'react';
-import React from 'react';
-import { FaRegCreditCard } from 'react-icons/fa6';
+import type { FC } from "react";
+import React from "react";
+import { FaRegCreditCard } from "react-icons/fa6";
 
-import FormItem from '@/shared/FormItem';
-import Input from '@/shared/Input/Input';
+import FormItem from "@/shared/FormItem";
+import Input from "@/shared/Input/Input";
 
 interface Props {
   isActive: boolean;

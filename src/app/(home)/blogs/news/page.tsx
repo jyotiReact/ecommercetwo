@@ -1,13 +1,13 @@
-import React from 'react';
+import React from "react";
 
-import SectionBlogs from '@/components/blog/SectionBlogs';
-import Breadcrumbs from '@/components/Breadcrumbs';
-import ButtonLink from '@/shared/Button/ButtonLink';
+import SectionBlogs from "@/components/blog/SectionBlogs";
+import Breadcrumbs from "@/components/Breadcrumbs";
+import ButtonLink from "@/shared/Button/ButtonLink";
 
 const page = () => {
   const breadcrumbitems = [
     { title: <ButtonLink href="/">Home</ButtonLink> },
-    { title: 'Journal' },
+    { title: "Journal" },
   ];
   return (
     <main>

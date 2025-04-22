@@ -1,15 +1,15 @@
-'use client';
+"use client";
 
-import type { FC } from 'react';
-import React, { useState } from 'react';
-import { FiTruck } from 'react-icons/fi';
-import { MdOutlineTakeoutDining } from 'react-icons/md';
+import type { FC } from "react";
+import React, { useState } from "react";
+import { FiTruck } from "react-icons/fi";
+import { MdOutlineTakeoutDining } from "react-icons/md";
 
-import Checkbox from '@/shared/Checkbox/Checkbox';
-import FormItem from '@/shared/FormItem';
-import Input from '@/shared/Input/Input';
-import Radio from '@/shared/Radio/Radio';
-import Select from '@/shared/Select/Select';
+import Checkbox from "@/shared/Checkbox/Checkbox";
+import FormItem from "@/shared/FormItem";
+import Input from "@/shared/Input/Input";
+import Radio from "@/shared/Radio/Radio";
+import Select from "@/shared/Select/Select";
 
 interface Props {
   isActive: boolean;
@@ -18,7 +18,7 @@ interface Props {
 }
 
 const ShippingAddress: FC<Props> = () => {
-  const [methodActive, setMethodActive] = useState<'Ship' | 'Pickup'>('Ship');
+  const [methodActive, setMethodActive] = useState<"Ship" | "Pickup">("Ship");
 
   return (
     <div className=" ">
@@ -27,13 +27,13 @@ const ShippingAddress: FC<Props> = () => {
       </div>
       <div className="mb-4 divide-y divide-neutral-300 rounded-md border  border-neutral-300 dark:divide-neutral-600  dark:border-neutral-600">
         <div
-          className={`flex items-center justify-between p-4 ${methodActive === 'Ship' && 'bg-blue-50 dark:bg-neutral-800'} `}
+          className={`flex items-center justify-between p-4 ${methodActive === "Ship" && "bg-blue-50 dark:bg-neutral-800"} `}
         >
           <Radio
             name="shipment-method"
             id="Ship"
             label="Ship"
-            defaultChecked={methodActive === 'Pickup'}
+            defaultChecked={methodActive === "Pickup"}
             onChange={(e) => setMethodActive(e as any)}
           />
           <div className="">
@@ -41,13 +41,13 @@ const ShippingAddress: FC<Props> = () => {
           </div>
         </div>
         <div
-          className={`flex items-center justify-between p-4 ${methodActive === 'Pickup' && 'bg-blue-50 dark:bg-neutral-800'}`}
+          className={`flex items-center justify-between p-4 ${methodActive === "Pickup" && "bg-blue-50 dark:bg-neutral-800"}`}
         >
           <Radio
             name="shipment-method"
             id="Pickup"
             label="Pickup"
-            defaultChecked={methodActive === 'Pickup'}
+            defaultChecked={methodActive === "Pickup"}
             onChange={(e) => setMethodActive(e as any)}
           />
           <div className="">

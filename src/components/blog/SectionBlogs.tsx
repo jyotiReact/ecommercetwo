@@ -1,6 +1,6 @@
-import BlogPostCard from '@/components/blog/BlogPostCard';
-import BlogCard from '@/components/BlogCard';
-import { blogs } from '@/data/content';
+import BlogPostCard from "@/components/blog/BlogPostCard";
+import BlogCard from "@/components/BlogCard";
+import { blogs } from "@/data/content";
 
 const SectionBlogs = () => {
   return (

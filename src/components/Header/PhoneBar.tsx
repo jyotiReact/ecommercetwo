@@ -1,17 +1,17 @@
-'use client';
+"use client";
 
-import { Dialog, Transition } from '@headlessui/react';
-import Image from 'next/image';
-import Link from 'next/link';
-import { pathOr } from 'ramda';
-import React, { Fragment, useState } from 'react';
-import { IoMdArrowDropdown } from 'react-icons/io';
+import { Dialog, Transition } from "@headlessui/react";
+import Image from "next/image";
+import Link from "next/link";
+import { pathOr } from "ramda";
+import React, { Fragment, useState } from "react";
+import { IoMdArrowDropdown } from "react-icons/io";
 
-import { headerNavData } from '@/data/content';
-import banner_2 from '@/images/Group_103-1.webp';
-import banner_1 from '@/images/phone_2.webp';
-import Button from '@/shared/Button/Button';
-import ButtonPrimary from '@/shared/Button/ButtonPrimary';
+import { headerNavData } from "@/data/content";
+import banner_2 from "@/images/Group_103-1.webp";
+import banner_1 from "@/images/phone_2.webp";
+import Button from "@/shared/Button/Button";
+import ButtonPrimary from "@/shared/Button/ButtonPrimary";
 
 export interface CartSideBarProps {}
 
@@ -22,28 +22,28 @@ const PhoneBar: React.FC<CartSideBarProps> = () => {
   const handleCloseMenu = () => setIsVisable(false);
 
   const title = pathOr(
-    '',
-    ['bottomNavLinks', 0, 'megaMenuData', 'title'],
+    "",
+    ["bottomNavLinks", 0, "megaMenuData", "title"],
     headerNavData,
   );
   const phoneTitle = pathOr(
-    '',
-    ['bottomNavLinks', 0, 'megaMenuData', 'menu1Data', 'title'],
+    "",
+    ["bottomNavLinks", 0, "megaMenuData", "menu1Data", "title"],
     headerNavData,
   );
   const watchTitle = pathOr(
-    '',
-    ['bottomNavLinks', 0, 'megaMenuData', 'menu2Data', 'title'],
+    "",
+    ["bottomNavLinks", 0, "megaMenuData", "menu2Data", "title"],
     headerNavData,
   );
   const menu1: any[] = pathOr(
     [],
-    ['bottomNavLinks', 0, 'megaMenuData', 'menu1Data', 'links'],
+    ["bottomNavLinks", 0, "megaMenuData", "menu1Data", "links"],
     headerNavData,
   );
   const menu2: any[] = pathOr(
     [],
-    ['bottomNavLinks', 0, 'megaMenuData', 'menu2Data', 'links'],
+    ["bottomNavLinks", 0, "megaMenuData", "menu2Data", "links"],
     headerNavData,
   );
 
@@ -119,7 +119,7 @@ const PhoneBar: React.FC<CartSideBarProps> = () => {
                               </h4>
                               <div className="mt-8">
                                 <p className="mb-3">
-                                  from:{' '}
+                                  from:{" "}
                                   <span className="text-lg font-semibold text-primary dark:text-white">
                                     $15
                                   </span>
@@ -151,7 +151,7 @@ const PhoneBar: React.FC<CartSideBarProps> = () => {
                               </h4>
                               <div className="mt-8">
                                 <p className="mb-3">
-                                  from:{' '}
+                                  from:{" "}
                                   <span className="text-lg font-semibold text-primary dark:text-white">
                                     $15
                                   </span>

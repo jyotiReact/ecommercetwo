@@ -1,7 +1,7 @@
-'use client';
+"use client";
 
-import { useTheme } from 'next-themes';
-import { useEffect, useState } from 'react';
+import { useTheme } from "next-themes";
+import { useEffect, useState } from "react";
 
 const ToggleSwitch = () => {
   const [darkModeActive, setDarkModeActive] = useState(false);
@@ -9,18 +9,18 @@ const ToggleSwitch = () => {
   const { setTheme, resolvedTheme } = useTheme();
   const handleToggleSwitch = () => {
     setDarkModeActive((prev) => !prev);
-    if (resolvedTheme === 'dark') {
-      setTheme('light');
+    if (resolvedTheme === "dark") {
+      setTheme("light");
       setDarkModeActive(false);
     }
-    if (resolvedTheme === 'light') {
-      setTheme('dark');
+    if (resolvedTheme === "light") {
+      setTheme("dark");
       setDarkModeActive(true);
     }
   };
 
   useEffect(() => {
-    if (resolvedTheme === 'dark') setDarkModeActive(true);
+    if (resolvedTheme === "dark") setDarkModeActive(true);
     else {
       setDarkModeActive(false);
     }

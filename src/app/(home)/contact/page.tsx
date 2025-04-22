@@ -1,18 +1,18 @@
-import Image from 'next/image';
-import React from 'react';
+import Image from "next/image";
+import React from "react";
 
-import Breadcrumbs from '@/components/Breadcrumbs';
-import about from '@/images/about.jpg';
-import founder from '@/images/founder.jpg';
-import signature from '@/images/signature.webp';
-import ButtonLink from '@/shared/Button/ButtonLink';
+import Breadcrumbs from "@/components/Breadcrumbs";
+import about from "@/images/about.jpg";
+import founder from "@/images/founder.jpg";
+import signature from "@/images/signature.webp";
+import ButtonLink from "@/shared/Button/ButtonLink";
 
-import ContactForm from './ContactForm';
+import ContactForm from "./ContactForm";
 
 const page = () => {
   const breadcrumbItems = [
     { title: <ButtonLink href="/">Home</ButtonLink> },
-    { title: 'About' },
+    { title: "About" },
   ];
   return (
     <main>

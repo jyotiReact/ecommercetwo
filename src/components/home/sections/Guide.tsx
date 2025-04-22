@@ -1,8 +1,8 @@
-import React from 'react';
+import React from "react";
 
-import GuideCard from '@/components/GuideCard';
-import { guideData } from '@/data/content';
-import ButtonSecondary from '@/shared/Button/ButtonSecondary';
+import GuideCard from "@/components/GuideCard";
+import { guideData } from "@/data/content";
+import ButtonSecondary from "@/shared/Button/ButtonSecondary";
 
 const GuideSection = () => {
   return (

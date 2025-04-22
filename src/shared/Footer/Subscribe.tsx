@@ -1,7 +1,7 @@
-import React from 'react';
+import React from "react";
 
-import ButtonPrimary from '../Button/ButtonPrimary';
-import Input from '../Input/Input';
+import ButtonPrimary from "../Button/ButtonPrimary";
+import Input from "../Input/Input";
 
 const Subscribe = () => {
   return (

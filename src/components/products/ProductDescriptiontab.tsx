@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const ProductDescriptiontab = () => {
   return (
@@ -45,7 +45,7 @@ const ProductDescriptiontab = () => {
             {`Find a wide range of products to enhance your life. From headphones
             and phones to speakers, smart watches, gaming equipment, and
             laptops, we have everything you need to stay connected and
-            entertained.`}{' '}
+            entertained.`}{" "}
             <br />
             {`Our headphones are designed for exceptional sound quality, comfort,
             and style. Whether you prefer over-ear, on-ear, or in-ear

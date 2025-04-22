@@ -1,9 +1,9 @@
-import Link from 'next/link';
-import React from 'react';
+import Link from "next/link";
+import React from "react";
 
-import Checkbox from '@/shared/Checkbox/Checkbox';
-import FormItem from '@/shared/FormItem';
-import Input from '@/shared/Input/Input';
+import Checkbox from "@/shared/Checkbox/Checkbox";
+import FormItem from "@/shared/FormItem";
+import Input from "@/shared/Input/Input";
 
 const ContactInfo = () => {
   return (

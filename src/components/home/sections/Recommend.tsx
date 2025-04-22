@@ -1,8 +1,8 @@
-import React from 'react';
+import React from "react";
 
-import ProductCardSmall from '@/components/products/ProductCardSmall';
-import { catalogNavLinks, products } from '@/data/content';
-import ButtonSecondary from '@/shared/Button/ButtonSecondary';
+import ProductCardSmall from "@/components/products/ProductCardSmall";
+import { catalogNavLinks, products } from "@/data/content";
+import ButtonSecondary from "@/shared/Button/ButtonSecondary";
 
 const RecommendedSection = () => {
   return (

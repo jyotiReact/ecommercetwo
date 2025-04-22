@@ -1,9 +1,9 @@
-import Image from 'next/image';
-import React from 'react';
+import Image from "next/image";
+import React from "react";
 
-import image2 from '@/images/Image.webp';
-import image1 from '@/images/Image_1_e77e3f11-5a28-455e-9b37-84337c5bef45.webp';
-import ButtonPrimary from '@/shared/Button/ButtonPrimary';
+import image2 from "@/images/Image.webp";
+import image1 from "@/images/Image_1_e77e3f11-5a28-455e-9b37-84337c5bef45.webp";
+import ButtonPrimary from "@/shared/Button/ButtonPrimary";
 
 const StylesSection = () => {
   return (

@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 
-import Sorter from '../Sorter';
+import Sorter from "../Sorter";
 
 const CollectionSorter = () => {
   return (

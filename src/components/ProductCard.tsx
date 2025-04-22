@@ -1,9 +1,9 @@
-import Image from 'next/image';
-import Link from 'next/link';
-import type { FC } from 'react';
-import React from 'react';
+import Image from "next/image";
+import Link from "next/link";
+import type { FC } from "react";
+import React from "react";
 
-import type { ProductType } from '@/data/types';
+import type { ProductType } from "@/data/types";
 
 interface ProductCardProps {
   product: ProductType;
@@ -42,7 +42,7 @@ const ProductCard: FC<ProductCardProps> = ({
           <h3 className="font-semibold">{product.name}</h3>
           <p
             className={`text-neutral-500 ${
-              showPrevPrice ? 'block' : 'hidden'
+              showPrevPrice ? "block" : "hidden"
             } text-sm line-through`}
           >
             ${product.previousPrice}

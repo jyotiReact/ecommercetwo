@@ -1,6 +1,6 @@
-import Link from 'next/link';
-import type { FC, ReactNode } from 'react';
-import React from 'react';
+import Link from "next/link";
+import type { FC, ReactNode } from "react";
+import React from "react";
 
 type GuideCardProps = {
   Icon: ReactNode | any;

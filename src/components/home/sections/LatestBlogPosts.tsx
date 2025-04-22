@@ -1,7 +1,7 @@
-import React from 'react';
+import React from "react";
 
-import BlogPostCard from '@/components/blog/BlogPostCard';
-import { blogs } from '@/data/content';
+import BlogPostCard from "@/components/blog/BlogPostCard";
+import { blogs } from "@/data/content";
 
 const LatestBlogPostsSection = () => {
   return (

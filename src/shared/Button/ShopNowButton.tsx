@@ -1,7 +1,7 @@
-import React from 'react';
-import { IoCaretForwardOutline } from 'react-icons/io5';
+import React from "react";
+import { IoCaretForwardOutline } from "react-icons/io5";
 
-import ButtonPrimary from './ButtonPrimary';
+import ButtonPrimary from "./ButtonPrimary";
 
 const ShopNowButton = () => {
   return (

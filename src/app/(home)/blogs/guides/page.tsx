@@ -1,14 +1,14 @@
-import React from 'react';
+import React from "react";
 
-import Breadcrumbs from '@/components/Breadcrumbs';
-import GuideCard from '@/components/GuideCard';
-import { guideData } from '@/data/content';
-import ButtonLink from '@/shared/Button/ButtonLink';
+import Breadcrumbs from "@/components/Breadcrumbs";
+import GuideCard from "@/components/GuideCard";
+import { guideData } from "@/data/content";
+import ButtonLink from "@/shared/Button/ButtonLink";
 
 const GuidePage = () => {
   const breadcrumbitems = [
     { title: <ButtonLink href="/">Home</ButtonLink> },
-    { title: 'Guides' },
+    { title: "Guides" },
   ];
   return (
     <main>

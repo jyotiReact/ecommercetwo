@@ -1,5 +1,5 @@
-import ProductCharacteristicsTab from './ProductCharacteristicsTab';
-import ProductDescriptiontab from './ProductDescriptiontab';
+import ProductCharacteristicsTab from "./ProductCharacteristicsTab";
+import ProductDescriptiontab from "./ProductDescriptiontab";
 
 const ProductTabs = () => {
   return (

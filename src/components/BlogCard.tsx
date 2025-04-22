@@ -1,8 +1,8 @@
-import type { StaticImageData } from 'next/image';
-import Image from 'next/image';
-import Link from 'next/link';
-import type { FC } from 'react';
-import React from 'react';
+import type { StaticImageData } from "next/image";
+import Image from "next/image";
+import Link from "next/link";
+import type { FC } from "react";
+import React from "react";
 
 interface BlogCardProps {
   title: string;

@@ -1,9 +1,9 @@
-import Link from 'next/link';
-import React from 'react';
+import Link from "next/link";
+import React from "react";
 
-import { footerData } from '@/data/content';
+import { footerData } from "@/data/content";
 
-import Logo from '../Logo/Logo';
+import Logo from "../Logo/Logo";
 
 const FooterMain = () => {
   return (

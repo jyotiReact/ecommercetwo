@@ -1,13 +1,13 @@
-import { pathOr } from 'ramda';
-import type { FC } from 'react';
-import React from 'react';
+import { pathOr } from "ramda";
+import type { FC } from "react";
+import React from "react";
 
-import SectionBlogBody from '@/components/blog/SectionBlogBody';
-import SectionBlogHero from '@/components/blog/SectionBlogHero';
-import BlogCard from '@/components/BlogCard';
-import Breadcrumbs from '@/components/Breadcrumbs';
-import { blogs } from '@/data/content';
-import ButtonLink from '@/shared/Button/ButtonLink';
+import SectionBlogBody from "@/components/blog/SectionBlogBody";
+import SectionBlogHero from "@/components/blog/SectionBlogHero";
+import BlogCard from "@/components/BlogCard";
+import Breadcrumbs from "@/components/Breadcrumbs";
+import { blogs } from "@/data/content";
+import ButtonLink from "@/shared/Button/ButtonLink";
 
 type PageProps = {
   params: { slug: string };
@@ -26,11 +26,11 @@ const getBlogData = (slug: string) => {
 };
 
 const page: FC<PageProps> = ({ params }) => {
-  const selectedBlog = getBlogData(pathOr('', ['slug'], params));
+  const selectedBlog = getBlogData(pathOr("", ["slug"], params));
 
   const breadcrumbItems = [
     { title: <ButtonLink href="/">Home</ButtonLink> },
-    { title: pathOr('', ['title'], selectedBlog) },
+    { title: pathOr("", ["title"], selectedBlog) },
   ];
 
   return (
@@ -38,15 +38,15 @@ const page: FC<PageProps> = ({ params }) => {
       <Breadcrumbs Items={breadcrumbItems} />
       <div className="pt-2">
         <SectionBlogHero
-          coverImage={pathOr('', ['coverImage'], selectedBlog)}
-          title={pathOr('', ['title'], selectedBlog)}
-          date={pathOr('', ['date'], selectedBlog)}
-          tag={pathOr('', ['tag'], selectedBlog)}
+          coverImage={pathOr("", ["coverImage"], selectedBlog)}
+          title={pathOr("", ["title"], selectedBlog)}
+          date={pathOr("", ["date"], selectedBlog)}
+          tag={pathOr("", ["tag"], selectedBlog)}
         />
       </div>
 
       <div className="pb-24 pt-20">
-        <SectionBlogBody blogData={pathOr(null, ['blogData'], selectedBlog)} />
+        <SectionBlogBody blogData={pathOr(null, ["blogData"], selectedBlog)} />
       </div>
 
       <div className="border-t border-neutral-300 pb-36 pt-8">

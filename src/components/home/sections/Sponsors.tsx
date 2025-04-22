@@ -1,8 +1,8 @@
-import Image from 'next/image';
-import Link from 'next/link';
-import React from 'react';
+import Image from "next/image";
+import Link from "next/link";
+import React from "react";
 
-import { sponsorsData } from '@/data/content';
+import { sponsorsData } from "@/data/content";
 
 const SponsorsSection = () => {
   return (

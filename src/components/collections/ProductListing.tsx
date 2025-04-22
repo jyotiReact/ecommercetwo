@@ -1,8 +1,8 @@
-import React from 'react';
+import React from "react";
 
-import { products } from '@/data/content';
+import { products } from "@/data/content";
 
-import ProductCard from '../products/ProductCard';
+import ProductCard from "../products/ProductCard";
 
 const ProductListing = () => {
   return (

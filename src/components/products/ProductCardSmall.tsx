@@ -1,10 +1,10 @@
-import Image from 'next/image';
+import Image from "next/image";
 // import ButtonPrimary from "@/shared/Button/ButtonPrimary";
-import Link from 'next/link';
-import type { FC } from 'react';
-import React from 'react';
+import Link from "next/link";
+import type { FC } from "react";
+import React from "react";
 
-import type { ProductType } from '@/data/types';
+import type { ProductType } from "@/data/types";
 
 const ProductCardSmall: FC<ProductType> = ({
   coverImage,

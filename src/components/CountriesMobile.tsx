@@ -1,13 +1,13 @@
-'use client';
+"use client";
 
-import { Menu, Transition } from '@headlessui/react';
-import Image from 'next/image';
-import { Fragment, useState } from 'react';
+import { Menu, Transition } from "@headlessui/react";
+import Image from "next/image";
+import { Fragment, useState } from "react";
 
-import countriesData from '@/data/countriesData';
+import countriesData from "@/data/countriesData";
 
 const CountriesMobile = () => {
-  const [activeCountryCode, setActiveCountryCode] = useState('CA');
+  const [activeCountryCode, setActiveCountryCode] = useState("CA");
 
   const activeCountry = countriesData.find(
     (country) => country.code === activeCountryCode,

@@ -1,22 +1,22 @@
-import type { StaticImageData } from 'next/image';
-import type { FC } from 'react';
-import React from 'react';
-import { BsLightningCharge } from 'react-icons/bs';
-import { FaCheck } from 'react-icons/fa6';
-import { HiMiniArrowUturnLeft } from 'react-icons/hi2';
-import { LuInfo, LuTruck } from 'react-icons/lu';
+import type { StaticImageData } from "next/image";
+import type { FC } from "react";
+import React from "react";
+import { BsLightningCharge } from "react-icons/bs";
+import { FaCheck } from "react-icons/fa6";
+import { HiMiniArrowUturnLeft } from "react-icons/hi2";
+import { LuInfo, LuTruck } from "react-icons/lu";
 
-import ColorPicker from '@/components/ColorPicker';
-import ImageShowCase from '@/components/ImageShowCase';
+import ColorPicker from "@/components/ColorPicker";
+import ImageShowCase from "@/components/ImageShowCase";
 // import ProductCard from "@/components/products/ProductCard";
-import Banner from '@/components/products/Banner';
-import ProductSlider from '@/components/products/ProductSlider';
-import ProductTabs from '@/components/products/ProductTabs';
-import { products } from '@/data/content';
-import Button from '@/shared/Button/Button';
-import ButtonPrimary from '@/shared/Button/ButtonPrimary';
-import ButtonSecondary from '@/shared/Button/ButtonSecondary';
-import InputNumber from '@/shared/InputNumber/InputNumber';
+import Banner from "@/components/products/Banner";
+import ProductSlider from "@/components/products/ProductSlider";
+import ProductTabs from "@/components/products/ProductTabs";
+import { products } from "@/data/content";
+import Button from "@/shared/Button/Button";
+import ButtonPrimary from "@/shared/Button/ButtonPrimary";
+import ButtonSecondary from "@/shared/Button/ButtonSecondary";
+import InputNumber from "@/shared/InputNumber/InputNumber";
 
 interface SectionProductHeaderProps {
   shots: StaticImageData[];
@@ -57,7 +57,7 @@ const SectionProduct: FC<SectionProductHeaderProps> = ({
 
         <div className="mb-5 space-y-1">
           <h1 className="text-2xl font-semibold">
-            <span className="text-green-700">${currentPrice}</span>{' '}
+            <span className="text-green-700">${currentPrice}</span>{" "}
             <span className=" text-neutral-500 line-through">${prevPrice}</span>
           </h1>
           <p className="text-sm">Tax included.</p>
@@ -118,7 +118,7 @@ const SectionProduct: FC<SectionProductHeaderProps> = ({
             </div>
             <div>
               <h3 className="flex items-start gap-2 text-sm font-semibold">
-                <span className="inline-block">Next Day Delivery</span>{' '}
+                <span className="inline-block">Next Day Delivery</span>{" "}
                 <LuInfo className="inline-block" size={12} />
               </h3>
               <p className="text-neutral-500  dark:text-neutral-300">

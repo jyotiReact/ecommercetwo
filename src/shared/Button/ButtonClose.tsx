@@ -1,5 +1,5 @@
-import React from 'react';
-import { MdClose } from 'react-icons/md';
+import React from "react";
+import { MdClose } from "react-icons/md";
 
 export interface ButtonCloseProps {
   className?: string;
@@ -8,8 +8,8 @@ export interface ButtonCloseProps {
 }
 
 const ButtonClose: React.FC<ButtonCloseProps> = ({
-  className = '',
-  IconclassName = 'w-5 h-5',
+  className = "",
+  IconclassName = "w-5 h-5",
   onClick = () => {},
 }) => {
   return (

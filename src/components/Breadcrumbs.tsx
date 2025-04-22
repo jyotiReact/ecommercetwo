@@ -1,5 +1,5 @@
-import { pathOr } from 'ramda';
-import type { FC, ReactNode } from 'react';
+import { pathOr } from "ramda";
+import type { FC, ReactNode } from "react";
 
 type BreadcrumbProps = {
   Items: { title: string | ReactNode }[];
@@ -9,10 +9,10 @@ const Breadcrumbs: FC<BreadcrumbProps> = ({ Items }) => {
     <div className="flex items-center text-sm">
       <ul className="flex items-center">
         {Items.map((item, idx) => {
-          const title = pathOr('', ['title'], item);
+          const title = pathOr("", ["title"], item);
           return (
             <li className="group" key={idx}>
-              {typeof title === 'string' ? (
+              {typeof title === "string" ? (
                 <div className="flex items-center">
                   <div className="m-2 h-px w-4 bg-neutral-400 group-first:hidden" />
                   <span className="text-neutral-500 dark:text-neutral-700">

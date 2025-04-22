@@ -1,7 +1,7 @@
-import React from 'react';
+import React from "react";
 
-import BenefitCard from '@/components/BenefitsCard';
-import { benefitsData } from '@/data/content';
+import BenefitCard from "@/components/BenefitsCard";
+import { benefitsData } from "@/data/content";
 
 const BenefitsSection = () => {
   return (

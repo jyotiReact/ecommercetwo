@@ -1,10 +1,10 @@
-'use client';
+"use client";
 
-import type { Route } from 'next';
-import Link from 'next/link';
-import type { ButtonHTMLAttributes, FC } from 'react';
-import React from 'react';
-import { IoCaretForwardOutline } from 'react-icons/io5';
+import type { Route } from "next";
+import Link from "next/link";
+import type { ButtonHTMLAttributes, FC } from "react";
+import React from "react";
+import { IoCaretForwardOutline } from "react-icons/io5";
 // import { IoCaretForwardOutline } from "react-icons/io5";
 
 export interface ButtonProps {
@@ -12,7 +12,7 @@ export interface ButtonProps {
   sizeClass?: string;
   loading?: boolean;
   disabled?: boolean;
-  type?: ButtonHTMLAttributes<HTMLButtonElement>['type'];
+  type?: ButtonHTMLAttributes<HTMLButtonElement>["type"];
   href?: Route;
   onClick?: () => void;
   children?: React.ReactNode;
@@ -20,8 +20,8 @@ export interface ButtonProps {
 }
 
 const Button: FC<ButtonProps> = ({
-  className = 'text-neutral-200 disabled:cursor-not-allowed',
-  sizeClass = 'py-3 px-4 sm:py-3 sm:px-6 text-sm',
+  className = "text-neutral-200 disabled:cursor-not-allowed",
+  sizeClass = "py-3 px-4 sm:py-3 sm:px-6 text-sm",
   disabled = false,
   href,
   children,

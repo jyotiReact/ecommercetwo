@@ -1,4 +1,4 @@
-import FAQsTab from '@/components/FAQsTab';
+import FAQsTab from "@/components/FAQsTab";
 
 const FAQsSection = () => {
   return (

@@ -1,15 +1,15 @@
-import Link from 'next/link';
-import { pathOr } from 'ramda';
-import React from 'react';
-import { MdClose } from 'react-icons/md';
+import Link from "next/link";
+import { pathOr } from "ramda";
+import React from "react";
+import { MdClose } from "react-icons/md";
 
-import { catalogNavLinks, socialLinks } from '@/data/content';
-import ButtonPrimary from '@/shared/Button/ButtonPrimary';
-import ToggleSwitch from '@/shared/Button/ToggleSwitch';
-import Logo from '@/shared/Logo/Logo';
+import { catalogNavLinks, socialLinks } from "@/data/content";
+import ButtonPrimary from "@/shared/Button/ButtonPrimary";
+import ToggleSwitch from "@/shared/Button/ToggleSwitch";
+import Logo from "@/shared/Logo/Logo";
 
-import CountriesMobile from '../CountriesMobile';
-import LanguageMobile from '../LanguageMobile';
+import CountriesMobile from "../CountriesMobile";
+import LanguageMobile from "../LanguageMobile";
 
 export interface NavMobileProps {
   onClickClose?: () => void;
@@ -57,7 +57,7 @@ const NavMobile: React.FC<NavMobileProps> = ({ onClickClose }) => {
           </Link>
         </p>
         <ul className="flex mt-10 justify-center gap-8 text-lg">
-        {socialLinks.map((listItem) => (
+          {socialLinks.map((listItem) => (
             <li>
               <Link className="text-lg" href={pathOr("#", ["href"], listItem)}>
                 {pathOr(<></>, ["Icon"], listItem)}

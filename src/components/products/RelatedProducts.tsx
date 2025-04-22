@@ -1,7 +1,7 @@
-import React from 'react';
+import React from "react";
 
-import ProductCard from '@/components/products/ProductCard';
-import { products } from '@/data/content';
+import ProductCard from "@/components/products/ProductCard";
+import { products } from "@/data/content";
 
 const relatedProductsSection = () => {
   return (

@@ -1,12 +1,12 @@
-import Image from 'next/image';
-import Link from 'next/link';
-import { pathOr } from 'ramda';
-import React from 'react';
+import Image from "next/image";
+import Link from "next/link";
+import { pathOr } from "ramda";
+import React from "react";
 
-import LanguageLarge from '@/components/LanguageLarge';
-import { paymentsData, socialLinks } from '@/data/content';
+import LanguageLarge from "@/components/LanguageLarge";
+import { paymentsData, socialLinks } from "@/data/content";
 
-import Subscribe from './Subscribe';
+import Subscribe from "./Subscribe";
 
 const FooterBottom = () => {
   return (
@@ -23,7 +23,7 @@ const FooterBottom = () => {
                 <li key={listItem.title}>
                   <Link
                     className="relative text-lg"
-                    href={pathOr('#', ['href'], listItem)}
+                    href={pathOr("#", ["href"], listItem)}
                   >
                     <Image
                       src={listItem.Icon}
@@ -44,9 +44,9 @@ const FooterBottom = () => {
                 <li key={listItem.href}>
                   <Link
                     className="text-lg"
-                    href={pathOr('#', ['href'], listItem)}
+                    href={pathOr("#", ["href"], listItem)}
                   >
-                    {pathOr('', ['Icon'], listItem)}
+                    {pathOr("", ["Icon"], listItem)}
                   </Link>
                 </li>
               ))}

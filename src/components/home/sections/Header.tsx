@@ -1,8 +1,8 @@
-import React from 'react';
+import React from "react";
 
-import { landingPageHeaderData } from '@/data/content';
+import { landingPageHeaderData } from "@/data/content";
 
-import HeaderCard from '../HeaderCard';
+import HeaderCard from "../HeaderCard";
 
 const Header = () => {
   return (

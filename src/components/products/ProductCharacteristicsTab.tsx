@@ -1,7 +1,7 @@
-import { pathOr } from 'ramda';
-import React from 'react';
+import { pathOr } from "ramda";
+import React from "react";
 
-import { productCharacterData } from '@/data/content';
+import { productCharacterData } from "@/data/content";
 
 const ProductCharacteristicsTab = () => {
   return (
@@ -45,16 +45,16 @@ const ProductCharacteristicsTab = () => {
         <div className="pb-4 text-sm">
           <ul className="divide-y divide-neutral-300  dark:divide-neutral-400">
             {productCharacterData.map((listItem) => (
-              <li className="mb-4 pt-4 " key={pathOr('', ['title'], listItem)}>
+              <li className="mb-4 pt-4 " key={pathOr("", ["title"], listItem)}>
                 <div className="flex justify-between gap-3">
                   <div className="basis-1/5">
                     <span className="font-medium">
-                      {pathOr('', ['title'], listItem)}
+                      {pathOr("", ["title"], listItem)}
                     </span>
                   </div>
                   <div className="basis-4/5">
                     <p className="text-neutral-500  dark:text-neutral-300">
-                      {pathOr('', ['text'], listItem)}
+                      {pathOr("", ["text"], listItem)}
                     </p>
                   </div>
                 </div>

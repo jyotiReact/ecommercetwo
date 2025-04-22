@@ -1,10 +1,10 @@
-import Link from 'next/link';
-import React from 'react';
+import Link from "next/link";
+import React from "react";
 
-import ButtonPrimary from '@/shared/Button/ButtonPrimary';
-import FormItem from '@/shared/FormItem';
-import Input from '@/shared/Input/Input';
-import Textarea from '@/shared/TextArea/TextArea';
+import ButtonPrimary from "@/shared/Button/ButtonPrimary";
+import FormItem from "@/shared/FormItem";
+import Input from "@/shared/Input/Input";
+import Textarea from "@/shared/TextArea/TextArea";
 
 const ContactForm = () => {
   return (
@@ -60,7 +60,7 @@ const ContactForm = () => {
             <Link href="/" className="text-black underline dark:text-white">
               Terms of Use
             </Link>
-          </span>{' '}
+          </span>{" "}
           regarding the storage of the data submitted through this form.
         </p>
       </div>

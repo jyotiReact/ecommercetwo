@@ -1,7 +1,7 @@
-import React from 'react';
+import React from "react";
 
-import FooterBottom from './FooterBottom';
-import FooterMain from './FooterMain';
+import FooterBottom from "./FooterBottom";
+import FooterMain from "./FooterMain";
 
 const Footer: React.FC = () => {
   return (

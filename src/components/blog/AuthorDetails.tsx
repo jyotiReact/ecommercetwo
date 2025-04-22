@@ -1,8 +1,8 @@
-import Link from 'next/link';
-import { pathOr } from 'ramda';
-import React from 'react';
+import Link from "next/link";
+import { pathOr } from "ramda";
+import React from "react";
 
-import { socialLinks } from '@/data/content';
+import { socialLinks } from "@/data/content";
 
 const AuthorDetails = () => {
   return (
@@ -16,8 +16,8 @@ const AuthorDetails = () => {
         <ul className="flex gap-3">
           {socialLinks.map((listItem) => (
             <li key={listItem.href}>
-              <Link href={pathOr('/#', ['href'], listItem)}>
-                {pathOr('', ['Icon'], listItem)}
+              <Link href={pathOr("/#", ["href"], listItem)}>
+                {pathOr("", ["Icon"], listItem)}
               </Link>
             </li>
           ))}

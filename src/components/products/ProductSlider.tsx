@@ -1,18 +1,18 @@
-'use client';
+"use client";
 
-import '@glidejs/glide/dist/css/glide.core.min.css';
+import "@glidejs/glide/dist/css/glide.core.min.css";
 
 import Glide, {
   Breakpoints,
   Controls,
-} from '@glidejs/glide/dist/glide.modular.esm';
-import type { FC } from 'react';
-import { useEffect, useRef } from 'react';
-import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
+} from "@glidejs/glide/dist/glide.modular.esm";
+import type { FC } from "react";
+import { useEffect, useRef } from "react";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
-import type { ProductType } from '@/data/types';
+import type { ProductType } from "@/data/types";
 
-import ProductCard from './ProductCard';
+import ProductCard from "./ProductCard";
 
 type RowProps = {
   title: string;
@@ -26,7 +26,7 @@ const ProductSlider: FC<RowProps> = ({ title, subText, products }) => {
   useEffect(() => {
     if (!glideRef.current) return;
     new Glide(glideRef.current, {
-      type: 'carousel',
+      type: "carousel",
       startAt: 0,
       gap: 6,
       perView: 3,

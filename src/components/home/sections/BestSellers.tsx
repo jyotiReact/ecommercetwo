@@ -1,8 +1,8 @@
-import React from 'react';
+import React from "react";
 
-import ProductCard from '@/components/products/ProductCard';
-import { products } from '@/data/content';
-import ButtonPrimary from '@/shared/Button/ButtonPrimary';
+import ProductCard from "@/components/products/ProductCard";
+import { products } from "@/data/content";
+import ButtonPrimary from "@/shared/Button/ButtonPrimary";
 
 const BestSellersSection = () => {
   return (

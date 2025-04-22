@@ -1,7 +1,7 @@
-import React from 'react';
-import { CiShoppingCart } from 'react-icons/ci';
+import React from "react";
+import { CiShoppingCart } from "react-icons/ci";
 
-import Logo from '@/shared/Logo/Logo';
+import Logo from "@/shared/Logo/Logo";
 
 const CheckoutHeader = () => {
   return (

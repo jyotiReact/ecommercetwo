@@ -1,7 +1,7 @@
-'use client';
+"use client";
 
-import Accordion from '@/components/Accordion';
-import { FAQsData } from '@/data/content';
+import Accordion from "@/components/Accordion";
+import { FAQsData } from "@/data/content";
 
 const FAQsTab = () => {
   return (

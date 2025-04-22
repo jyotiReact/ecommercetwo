@@ -1,6 +1,6 @@
 // import ButtonSecondary from "@/shared/Button/ButtonSecondary";
-import type { FC, ReactNode } from 'react';
-import React from 'react';
+import type { FC, ReactNode } from "react";
+import React from "react";
 
 type BenefitsCardProps = {
   Icon: ReactNode | any;

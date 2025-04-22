@@ -1,13 +1,13 @@
-'use client';
+"use client";
 
-import { Popover, Transition } from '@headlessui/react';
-import { Fragment, useState } from 'react';
-import { MdKeyboardArrowDown } from 'react-icons/md';
+import { Popover, Transition } from "@headlessui/react";
+import { Fragment, useState } from "react";
+import { MdKeyboardArrowDown } from "react-icons/md";
 
 const languages = [
-  { key: 1, value: 'English', label: 'EN' },
-  { key: 2, value: 'Francias', label: 'FR' },
-  { key: 3, value: 'Espanol', label: 'ES' },
+  { key: 1, value: "English", label: "EN" },
+  { key: 2, value: "Francias", label: "FR" },
+  { key: 3, value: "Espanol", label: "ES" },
 ];
 
 const LanguageMobile = () => {

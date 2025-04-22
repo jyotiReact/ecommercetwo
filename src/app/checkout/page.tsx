@@ -1,26 +1,26 @@
-'use client';
+"use client";
 
-import Image from 'next/image';
-import Link from 'next/link';
-import { useState } from 'react';
+import Image from "next/image";
+import Link from "next/link";
+import { useState } from "react";
 
-import { products } from '@/data/content';
-import type { ProductType } from '@/data/types';
-import ButtonPrimary from '@/shared/Button/ButtonPrimary';
+import { products } from "@/data/content";
+import type { ProductType } from "@/data/types";
+import ButtonPrimary from "@/shared/Button/ButtonPrimary";
 
-import ContactInfo from '../../components/checkout/ContactInfo';
-import PaymentMethod from '../../components/checkout/PaymentMethod';
-import ShippingAddress from '../../components/checkout/ShippingAddress';
+import ContactInfo from "../../components/checkout/ContactInfo";
+import PaymentMethod from "../../components/checkout/PaymentMethod";
+import ShippingAddress from "../../components/checkout/ShippingAddress";
 
 const CheckoutPage = () => {
   const [tabActive, setTabActive] = useState<
-    'ContactInfo' | 'ShippingAddress' | 'PaymentMethod'
-  >('ShippingAddress');
+    "ContactInfo" | "ShippingAddress" | "PaymentMethod"
+  >("ShippingAddress");
 
   const handleScrollToEl = (id: string) => {
     const element = document.getElementById(id);
     setTimeout(() => {
-      element?.scrollIntoView({ behavior: 'smooth' });
+      element?.scrollIntoView({ behavior: "smooth" });
     }, 80);
   };
 
@@ -63,26 +63,26 @@ const CheckoutPage = () => {
 
         <div id="ShippingAddress" className="scroll-mt-24">
           <ShippingAddress
-            isActive={tabActive === 'ShippingAddress'}
+            isActive={tabActive === "ShippingAddress"}
             onOpenActive={() => {
-              setTabActive('ShippingAddress');
-              handleScrollToEl('ShippingAddress');
+              setTabActive("ShippingAddress");
+              handleScrollToEl("ShippingAddress");
             }}
             onCloseActive={() => {
-              setTabActive('PaymentMethod');
-              handleScrollToEl('PaymentMethod');
+              setTabActive("PaymentMethod");
+              handleScrollToEl("PaymentMethod");
             }}
           />
         </div>
 
         <div id="PaymentMethod" className="scroll-mt-24">
           <PaymentMethod
-            isActive={tabActive === 'PaymentMethod'}
+            isActive={tabActive === "PaymentMethod"}
             onOpenActive={() => {
-              setTabActive('PaymentMethod');
-              handleScrollToEl('PaymentMethod');
+              setTabActive("PaymentMethod");
+              handleScrollToEl("PaymentMethod");
             }}
-            onCloseActive={() => setTabActive('PaymentMethod')}
+            onCloseActive={() => setTabActive("PaymentMethod")}
           />
         </div>
 

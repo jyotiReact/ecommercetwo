@@ -1,18 +1,18 @@
-import Link from 'next/link';
-import { pathOr } from 'ramda';
-import React from 'react';
+import Link from "next/link";
+import { pathOr } from "ramda";
+import React from "react";
 
-import { headerNavData } from '@/data/content';
+import { headerNavData } from "@/data/content";
 
-import type { NavItemType } from '../NavItem';
-import NavigationItem from '../NavItem';
-import PhoneBar from './PhoneBar';
+import type { NavItemType } from "../NavItem";
+import NavigationItem from "../NavItem";
+import PhoneBar from "./PhoneBar";
 
 const BottomNav = () => {
-  const navLinks: NavItemType[] = pathOr([], ['bottomNavLinks'], headerNavData);
+  const navLinks: NavItemType[] = pathOr([], ["bottomNavLinks"], headerNavData);
   const dropDownMenuOptions: { href: string; label: string }[] = pathOr(
     [],
-    ['bottomNavLinks', 1, 'dropDownMenuData'],
+    ["bottomNavLinks", 1, "dropDownMenuData"],
     headerNavData,
   );
   return (
@@ -46,7 +46,7 @@ const BottomNav = () => {
 
           <div>
             <p className="text-neutral-500 dark:text-neutral-200">
-              Need help? Call Us:{' '}
+              Need help? Call Us:{" "}
               <span className="font-semibold text-black dark:text-white">
                 +84 1234 555 77
               </span>

@@ -1,11 +1,11 @@
-import type { StaticImageData } from 'next/image';
-import Image from 'next/image';
-import type { FC } from 'react';
-import React from 'react';
+import type { StaticImageData } from "next/image";
+import Image from "next/image";
+import type { FC } from "react";
+import React from "react";
 
-import ButtonLink from '@/shared/Button/ButtonLink';
+import ButtonLink from "@/shared/Button/ButtonLink";
 
-import Breadcrumbs from '../Breadcrumbs';
+import Breadcrumbs from "../Breadcrumbs";
 
 const CollectionHeader: FC<{
   title: string;

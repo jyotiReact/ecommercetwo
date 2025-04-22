@@ -1,18 +1,18 @@
-'use client';
+"use client";
 
-import { Dialog, Transition } from '@headlessui/react';
-import Image from 'next/image';
-import Link from 'next/link';
-import React, { Fragment, useState } from 'react';
-import { CiShoppingCart } from 'react-icons/ci';
-import { MdClose } from 'react-icons/md';
+import { Dialog, Transition } from "@headlessui/react";
+import Image from "next/image";
+import Link from "next/link";
+import React, { Fragment, useState } from "react";
+import { CiShoppingCart } from "react-icons/ci";
+import { MdClose } from "react-icons/md";
 
-import { products } from '@/data/content';
-import type { ProductType } from '@/data/types';
-import ButtonCircle3 from '@/shared/Button/ButtonCircle3';
-import ButtonPrimary from '@/shared/Button/ButtonPrimary';
-import ButtonSecondary from '@/shared/Button/ButtonSecondary';
-import InputNumber from '@/shared/InputNumber/InputNumber';
+import { products } from "@/data/content";
+import type { ProductType } from "@/data/types";
+import ButtonCircle3 from "@/shared/Button/ButtonCircle3";
+import ButtonPrimary from "@/shared/Button/ButtonPrimary";
+import ButtonSecondary from "@/shared/Button/ButtonSecondary";
+import InputNumber from "@/shared/InputNumber/InputNumber";
 
 export interface CartSideBarProps {}
 const CartSideBar: React.FC<CartSideBarProps> = () => {
@@ -93,7 +93,7 @@ const CartSideBar: React.FC<CartSideBarProps> = () => {
                     <div className="hiddenScrollbar h-full overflow-y-auto p-5">
                       <div className="flex items-center justify-between">
                         <h3 className="text-4xl font-semibold">
-                          Cart{' '}
+                          Cart{" "}
                           <span className="text-sm font-normal">2 items</span>
                         </h3>
                         <ButtonCircle3 onClick={handleCloseMenu}>

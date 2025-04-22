@@ -1,13 +1,13 @@
-import Image from 'next/image';
-import Link from 'next/link';
+import Image from "next/image";
+import Link from "next/link";
 
-import Breadcrumbs from '@/components/Breadcrumbs';
-import RelatedProducts from '@/components/products/RelatedProducts';
-import { products } from '@/data/content';
-import type { ProductType } from '@/data/types';
-import ButtonLink from '@/shared/Button/ButtonLink';
-import ButtonPrimary from '@/shared/Button/ButtonPrimary';
-import InputNumber from '@/shared/InputNumber/InputNumber';
+import Breadcrumbs from "@/components/Breadcrumbs";
+import RelatedProducts from "@/components/products/RelatedProducts";
+import { products } from "@/data/content";
+import type { ProductType } from "@/data/types";
+import ButtonLink from "@/shared/Button/ButtonLink";
+import ButtonPrimary from "@/shared/Button/ButtonPrimary";
+import InputNumber from "@/shared/InputNumber/InputNumber";
 
 const renderProduct = (item: ProductType) => {
   const { name, coverImage, currentPrice, slug, category } = item;
@@ -75,7 +75,7 @@ const renderProduct = (item: ProductType) => {
 const CartPage = () => {
   const breadcrumbitems = [
     { title: <ButtonLink href="/">Home</ButtonLink> },
-    { title: 'Your Shopping Cart' },
+    { title: "Your Shopping Cart" },
   ];
   return (
     <main className="nc-CartPage">
